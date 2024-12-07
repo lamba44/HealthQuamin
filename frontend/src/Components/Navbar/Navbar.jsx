@@ -49,9 +49,13 @@ const Navbar = () => {
                         />
                         <div className="navbardropdownmenu">
                             <div className="navbardropdownmenuitems">
-                                <p>My Profile</p>
-                                <p>My Appointments</p>
-                                <p>Logout</p>
+                                <p onClick={() => navigate("my-profile")}>
+                                    My Profile
+                                </p>
+                                <p onClick={() => navigate("my-appointments")}>
+                                    My Appointments
+                                </p>
+                                <p onClick={() => setToken(false)}>Logout</p>
                             </div>
                         </div>
                     </div>
