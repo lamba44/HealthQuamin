@@ -1,0 +1,126 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.875rem; /* Small text */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid #9ca3af;
+}
+
+.navbarlogo {
+    width: 11rem;
+    cursor: pointer;
+}
+
+.navbarul {
+    display: none;
+    gap: 1.25rem;
+    align-items: flex-start;
+    font-weight: 500;
+    list-style: none;
+}
+
+.navbarul li {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.navbarul a {
+    color: #000;
+    text-decoration: none;
+}
+
+.navbarul hr {
+    display: none;
+    border: none;
+    outline: none;
+    height: 0.125rem; /* 2px */
+    background-color: #0d5e90;
+    width: 60%; /* 3/5 */
+    margin: auto;
+}
+
+.active hr {
+    display: block;
+}
+
+.navbarbtn {
+    display: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 9999px;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #0d5e90;
+    cursor: pointer;
+}
+
+.navbarbtncontainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbarpp {
+    border-radius: 9999px;
+    width: 2rem;
+}
+
+.navbardropdown {
+    width: 0.625rem;
+}
+
+.navbarprofile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.navbardropdownmenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 3.5rem; /* 56px */
+    font-size: 1rem; /* 16px */
+    font-weight: 500; /* Medium */
+    color: #4b5563; /* Gray 600 */
+    z-index: 20;
+    display: none;
+}
+
+.group:hover .navbardropdownmenu {
+    display: block;
+}
+
+.navbardropdownmenuitems {
+    min-width: 12rem; /* 192px */
+    background-color: #f4f4f5; /* Stone 100 */
+    border-radius: 0.25rem; /* 4px */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* 16px */
+    padding: 1rem; /* 16px */
+}
+
+.navbardropdownmenuitems p {
+    cursor: pointer;
+}
+
+.navbardropdownmenuitems p:hover {
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .navbarul {
+        display: flex;
+    }
+    .navbarbtn {
+        display: block;
+    }
+}
