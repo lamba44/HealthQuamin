@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./TopDoctors.css";
-import { doctors } from "./../../assets/assets";
 import { useNavigate } from "react-router-dom";
+import { AppContext } from "../../Context/AppContext";
 
 const TopDoctors = () => {
     const navigate = useNavigate();
+    const { doctors } = useContext(AppContext);
 
     return (
         <div className="topdocs">
@@ -35,7 +36,15 @@ const TopDoctors = () => {
                     </div>
                 ))}
             </div>
-            <button className="topdocsbtn">More</button>
+            <button
+                onClick={() => {
+                    navigate("/doctors");
+                    scrollTo(0, 0);
+                }}
+                className="topdocsbtn"
+            >
+                More
+            </button>
         </div>
     );
 };

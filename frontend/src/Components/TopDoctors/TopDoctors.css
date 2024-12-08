@@ -94,6 +94,16 @@
     color: #4b5563;
     background-color: #eff6ff;
     border: none;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.topdocsbtn:hover {
+    transform: scale(1.05);
+    color: #fff;
+    background-color: #0d5e90;
 }
 
 @media (min-width: 640px) {
