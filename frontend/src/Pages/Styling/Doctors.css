@@ -1,0 +1,108 @@
+.alldocsgriditem {
+    overflow: hidden;
+    border-radius: 0.75rem;
+    border: 1px solid #0d5e90;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+.alldocsgriditem:hover {
+    transform: translateY(-10px);
+}
+
+.alldocsgriditemimg {
+    width: 100%;
+    background-color: #eff6ff;
+}
+
+.alldocsgriditemcontent {
+    padding: 1rem;
+}
+
+.alldocsgriditemav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #10b981;
+}
+
+.greendot {
+    border-radius: 9999px;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #10b981;
+}
+
+.alldocname {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    color: #111827;
+}
+
+.alldocspec {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #4b5563;
+}
+
+.alldocsgrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem; /* 4px */
+    row-gap: 1.5rem;
+}
+
+.alldocstopline {
+    color: #4b5563;
+}
+
+.alldocsfilter {
+    display: flex;
+    margin-top: 1.25rem;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.alldocsfiltermenu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #4b5563;
+}
+
+.filteritem {
+    width: 94vw;
+    padding-left: 0.75rem; /* 3px */
+    padding-right: 4rem; /* 16px */
+    padding-top: 0.375rem; /* 1.5px */
+    padding-bottom: 0.375rem; /* 1.5px */
+    border: 1px solid #d1d5db; /* gray-300 */
+    border-radius: 0.25rem; /* rounded */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.filteritem.active {
+    background-color: #e0e7ff; /* indigo-100 */
+    color: #000; /* black */
+}
+
+@media (min-width: 640px) {
+    .alldocsfilter {
+        flex-direction: row;
+    }
+
+    .filteritem {
+        width: auto;
+    }
+}

@@ -295,4 +295,18 @@ export const doctors = [
             line2: "Circle, Ring Road, London",
         },
     },
+    {
+        _id: "doc15",
+        name: "Dr. Tummy Problems",
+        image: doc15,
+        speciality: "Gastroenterologist",
+        degree: "MBBS",
+        experience: "1 Years",
+        about: "Dr. Tummmy Problems fixes your tummy problems",
+        fees: 30,
+        address: {
+            line1: "37th Cross, Richmond",
+            line2: "Circle, Ring Road, London",
+        },
+    },
 ];

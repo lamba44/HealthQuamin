@@ -12,6 +12,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <img
+                onClick={() => navigate("/")}
                 className="navbarlogo"
                 src={assets.logo}
                 alt="Quamin Health Logo"
