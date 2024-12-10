@@ -102,6 +102,53 @@
     width: 100%;
 }
 
+/* Default styles */
+.slot-item {
+    text-align: center; /* text-center */
+    padding: 1.5rem 0; /* py-6 */
+    min-width: 4rem; /* min-w-16 */
+    border-radius: 9999px; /* rounded-full */
+    cursor: pointer; /* cursor-pointer */
+}
+
+/* Styles when slotIndex === index */
+.selected-slot {
+    background-color: #0d5e90; /* bg-#0d5e90 */
+    color: white; /* text-white */
+}
+
+/* Styles when slotIndex !== index */
+.default-slot {
+    border: 1px solid gray; /* border border-gray */
+}
+
+.slottime {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+}
+
+.time-slot {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.selected-time {
+    background-color: #0d5e90;
+    color: white;
+}
+
+.default-time {
+    border: 1px solid #ddd;
+    color: #888;
+}
+
 @media (min-width: 640px) {
     .docdetails {
         flex-direction: row;
