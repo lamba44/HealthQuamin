@@ -87,6 +87,21 @@
     color: #4b5563;
 }
 
+.bookingslots {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.slotdatetime {
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 1rem;
+    gap: 0.75rem;
+    align-items: center;
+    width: 100%;
+}
+
 @media (min-width: 640px) {
     .docdetails {
         flex-direction: row;
@@ -100,5 +115,10 @@
         margin-left: 0;
         margin-right: 0;
         margin-top: 0;
+    }
+
+    .bookingslots {
+        padding-left: 1rem;
+        margin-left: 18rem;
     }
 }
