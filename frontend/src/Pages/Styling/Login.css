@@ -1,0 +1,62 @@
+.login {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.loginarea {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 0.75rem; /* 3 * 0.25rem */
+    align-items: flex-start;
+    padding: 1.5rem; /* 6 * 0.25rem */
+    min-width: 340px;
+    border-radius: 0.75rem; /* 12px */
+    color: #525252; /* text-zinc-600 */
+    font-size: 0.875rem; /* 14px (text-sm) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logintitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.loginformgroup {
+    width: 100%;
+}
+
+.logininput {
+    border: 1px solid #d4d4d4; /* border-zinc-300 */
+    border-radius: 0.25rem; /* 4px */
+    width: 100%; /* w-full */
+    padding: 0.5rem; /* 2 * 0.25rem */
+    margin-top: 0.25rem;
+}
+
+.loginpagebtn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    background-color: #0d5e90;
+    cursor: pointer;
+}
+
+.clickherelogin {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0d5e90;
+}
+
+@media (min-width: 640px) {
+    .loginarea {
+        min-width: 384px; /* sm:min-w-96 */
+    }
+}

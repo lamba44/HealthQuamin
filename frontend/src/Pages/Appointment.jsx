@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { AppContext } from "./../Context/AppContext";
 import "./Styling/Appointment.css";
 import { assets } from "../assets/assets";
+import RelatedDoctors from "../Components/RelatedDoctors/RelatedDoctors";
 
 const Appointment = () => {
     const { docId } = useParams();
@@ -163,7 +164,10 @@ const Appointment = () => {
                                 </p>
                             ))}
                     </div>
+                    <button className="bookbtn">Book Appointment</button>
                 </div>
+                {/* Listing Related Doctors */}
+                <RelatedDoctors docId={docId} speciality={docInfo.speciality} />
             </div>
         )
     );

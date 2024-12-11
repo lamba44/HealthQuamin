@@ -149,6 +149,23 @@
     color: #888;
 }
 
+.bookbtn {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 9999px;
+    border: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #0d5e90;
+    cursor: pointer;
+}
+
 @media (min-width: 640px) {
     .docdetails {
         flex-direction: row;

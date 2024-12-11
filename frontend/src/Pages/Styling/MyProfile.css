@@ -1,0 +1,110 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 32rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.profileimg {
+    border-radius: 0.25rem;
+    width: 9rem;
+}
+
+.editname {
+    margin-top: 1rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    background-color: #e9e9e9;
+    max-width: 15rem;
+}
+
+.profilename {
+    margin-top: 1rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    color: #262626;
+}
+
+.profilehr {
+    background-color: #f3f4f6;
+    height: 1px;
+    border: none;
+}
+
+.profilesubhead {
+    margin-top: 0.75rem;
+    text-decoration: underline;
+    color: #737373;
+}
+
+.profiledata {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 0.625rem; /* 2.5 * 0.25rem */
+    margin-top: 0.75rem; /* 3 * 0.25rem */
+    color: #4b5563;
+}
+
+.profilekey {
+    font-weight: 500;
+}
+
+.profileinfo {
+    color: #9ca3af;
+}
+
+.profileinfospecial {
+    color: #3b82f6;
+}
+
+.editinfo {
+    max-width: 15rem;
+    background-color: #f3f4f6;
+}
+
+.genderselector {
+    max-width: 5rem;
+    background-color: #f3f4f6;
+}
+
+.dateselector {
+    max-width: 7rem;
+    background-color: #f3f4f6;
+}
+
+.profileinfo,
+.profileinfospecial,
+.editinfo,
+.genderselector,
+.dateselector {
+    padding: 0.5rem;
+    border: none;
+}
+
+.profilebtncontainer {
+    margin-top: 2.5rem;
+}
+
+.profilebtn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 9999px;
+    border: 1px solid #0d5e90;
+    background-color: transparent;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.profilebtn:hover {
+    color: #fff;
+    background-color: #0d5e90;
+}

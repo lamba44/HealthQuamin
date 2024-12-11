@@ -16,7 +16,10 @@ const TopDoctors = () => {
             <div className="topdocsgrid">
                 {doctors.slice(0, 10).map((item, index) => (
                     <div
-                        onClick={() => navigate(`/appointment/${item._id}`)}
+                        onClick={() => {
+                            navigate(`/appointment/${item._id}`),
+                                scrollTo(0, 0);
+                        }}
                         className="topdocsgriditem"
                         key={index}
                     >
