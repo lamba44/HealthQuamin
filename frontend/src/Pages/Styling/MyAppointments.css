@@ -1,0 +1,100 @@
+.myappoint {
+    padding-bottom: 0.75rem;
+    margin-top: 3rem;
+    border-bottom: 1px solid #3f3f46;
+    font-weight: 500;
+    color: #3f3f46;
+}
+
+.myappointlist {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    gap: 1rem;
+    border-bottom: 1px solid #3f3f46;
+}
+
+.myappointdocimg {
+    width: 8rem;
+    background-color: #0d5e90;
+}
+
+.myappointdetails {
+    flex: 1 1 0%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #51525b;
+}
+
+.myappointdocname {
+    font-weight: 600;
+    color: #262626;
+}
+
+.myappointdocaddress {
+    margin-top: 0.25rem;
+    font-weight: 500;
+    color: #3f3f46;
+}
+
+.myappointdocaddressline {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.myappointtime {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-top: 0.25rem;
+}
+
+.myappointtimespan {
+    color: #404040;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.myappointbtncontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.myappointbtn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #78716c;
+    background-color: transparent;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.myappointpaybtn:hover {
+    color: #fff;
+    background-color: #0d5e90;
+}
+
+.myappointcancelbtn:hover {
+    color: #fff;
+    background-color: #dc2626;
+}
+
+@media (min-width: 640px) {
+    .myappointlist {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .myappointbtn {
+        min-width: 9.5rem;
+    }
+}

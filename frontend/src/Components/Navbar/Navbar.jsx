@@ -68,6 +68,48 @@ const Navbar = () => {
                         Create Account
                     </button>
                 )}
+                <img
+                    onClick={() => setShowMenu(true)}
+                    className="navbarmobilemenuicon"
+                    src={assets.menu_icon}
+                    alt=""
+                />
+                {/* Mobile Menu */}
+                <div className={`navbarmobilemenu ${showMenu ? "show" : ""}`}>
+                    <div className="navbarmobilemenulogos">
+                        <img
+                            className="navbarmobilemenumainlogo"
+                            src={assets.logo}
+                            alt="Mobile Logo"
+                        />
+                        <img
+                            className="navbarmobilemenucrossicon"
+                            onClick={() => setShowMenu(false)}
+                            src={assets.cross_icon}
+                            alt="Close Menu"
+                        />
+                    </div>
+                    <ul className="navbarmobileul">
+                        <NavLink onClick={() => setShowMenu(false)} to="/">
+                            <p className="navbarmobilelink">HOME</p>
+                        </NavLink>
+                        <NavLink
+                            onClick={() => setShowMenu(false)}
+                            to="/doctors"
+                        >
+                            <p className="navbarmobilelink">ALL DOCTORS</p>
+                        </NavLink>
+                        <NavLink onClick={() => setShowMenu(false)} to="/about">
+                            <p className="navbarmobilelink">ABOUT</p>
+                        </NavLink>
+                        <NavLink
+                            onClick={() => setShowMenu(false)}
+                            to="/contact"
+                        >
+                            <p className="navbarmobilelink">CONTACT</p>
+                        </NavLink>
+                    </ul>
+                </div>
             </div>
         </div>
     );
